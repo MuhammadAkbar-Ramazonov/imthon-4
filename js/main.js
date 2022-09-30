@@ -4,7 +4,14 @@ $(document).ready(function(){
         dots:true,
         slidesToShow: 3,
         slidesToScroll: 1,
+        speed: 800,
+        easing: 'easy',
+        // infinite: true,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 3000,
+        pauseOnHover: true,
+        pauseOnFocus: true,
+        pauseOnDotsHover: true,
+    
     });
 });

@@ -66,6 +66,37 @@
     background-image: url("../images/arrow-right.svg");
     background-repeat: no-repeat;
 }
+/* .site-list .slick-arrow.slick-disabled{
+    opacity: 0.25;
+} */
 .site-item{
     min-width: 0;
+}
+.slick-dots{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.site-list .slick-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.site-list .slick-dots li{
+    list-style: none;
+    margin: 0 10px;
+}
+
+.site-list .slick-dots button{
+    font-size: 0;
+    width: 10px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.site-list .slick-dots li.slick-active button{
+    background-color: #000;
+
 }
