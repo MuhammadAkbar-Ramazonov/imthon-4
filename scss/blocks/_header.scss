@@ -1,0 +1,122 @@
+/* site header start */
+.top-header-address {
+    margin-right: 100px;
+}
+.top-header-address::before{
+    display: block;
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    background-image: url("../../images/adres.svg");
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    content: "";
+}
+.top-header-link{
+    font-size: 10px;
+    line-height: 15px;
+    color: #1A1A1A;
+}
+.top-header-tel::before{
+    display: block;
+    width: 15px;
+    height: 15px;
+    margin-right: 6px;
+    background-image: url("../../images/phone.svg");
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    content: "";
+}
+.site-header{
+    padding-top: 20px;
+    padding-bottom: 19px;
+}
+.show-block{
+    display: block !important;
+}
+.site-nav{
+    z-index: 1;
+    top: 65px;
+    right: calc(50% - 159px);
+    display: none;
+    width: 320px;
+    opacity: 0;
+    transform: translateY(-200%);
+    display: none;
+}
+.site-nav.show{
+    animation: slideIn 0.8s ease-in-out forwards;
+    display: grid;
+}
+.site-nav.closing{
+    animation: slideOut 0.8s ease-in-out forwards;
+}
+.site-header-link{
+    font-size: 16px;
+    line-height: 24px;
+}
+.site-header-contact{
+    font-size: 13px;
+    line-height: 20px;
+    padding: 11px 28px;
+}
+
+@media screen and (min-width: 768px) {
+    .site-header{
+        padding-top: 16px;
+        padding-bottom: 14px;
+    }    
+    .site-header-item:first-child {
+        display: flex;
+        align-items: center;
+        margin-right: 87px;
+    }
+    .site-header-item:first-child::before {
+        display: block;
+        width: 11px;
+        height: 11px;
+        margin-right: 8px;
+        background-color: #fff;
+        border-radius: 50%;
+        content: "";
+    }
+    .site-header-item:nth-child(2) {
+        margin-right: 74px;
+    }
+    .site-header-item:nth-child(3) {
+        margin-right: 64px;
+    }
+    
+    .site-nav{
+        position: static !important;
+        opacity: 1 !important;
+        width: 100%;
+        transform: none;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .site-header-item:nth-child(4) {
+        margin-right: 68px;
+    }
+    
+}
+
+
+@keyframes slideIn{
+    100%{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes slideOut{
+    0%{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(-200%);
+    }
+}
