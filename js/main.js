@@ -1,11 +1,5 @@
 var elOpenBtn = document.querySelector(".js-header-btn");
 var elSiteNav = document.querySelector(".site-nav");
-
-
-// elOpenBtn.addEventListener("click", function(){
-//     elSiteNav.classList.toggle("show-block");
-// });
-
 const hamburgerButton = document.querySelector(".burger")
 
 hamburgerButton.addEventListener("click", () => {
@@ -29,6 +23,14 @@ $(document).ready(function(){
         dots: false,
         slidesToShow: 3,
         slidesToScroll: 1,
+        responsive: [
+            {
+              breakpoint: 1000,
+              settings: {
+                slidesToShow: 1,
+              }
+            },
+        ],
         speed: 800,
         easing: 'easy',
         autoplay: true,

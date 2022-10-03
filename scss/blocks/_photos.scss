@@ -1,0 +1,42 @@
+/* site photo start */
+
+.photo{
+    padding-top: 60px;
+    padding-bottom: 103px;
+}
+
+.photo-section-list{
+    max-width: 1242px;
+}
+.photo-wrapper{
+    max-width: 497px;
+    margin-bottom: 48px;
+}
+.photo-title{
+    font-size: 20px;
+    line-height: 187.5%;
+    color: #222222;
+}
+.photo-desc{
+    font-size: 12px;
+    line-height: 187.5%;
+    color: #525252;
+}
+.photo-img{
+    width: 100%;
+    height: 100%;
+}
+
+@include mobile-first(768px){
+    .photo{
+        padding-top: 141px;
+        padding-bottom: 164px;
+    }
+    .photo-title{
+        font-size: 25px;
+        
+    }
+    .photo-desc{
+        font-size: 14px;
+    }
+}

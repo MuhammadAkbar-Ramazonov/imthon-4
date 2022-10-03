@@ -1,0 +1,106 @@
+/* site company start*/
+
+.company{
+    padding-top: 48px;
+    padding-bottom: 254px;
+}
+.company-wrapper{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.company-title{
+    max-width: 826px;
+    font-size: 16px;
+    line-height: 187.5%;
+    margin: 0 auto;
+    margin-bottom: 45px;
+    color: #222222;
+}
+.company-inner{
+    position: relative;
+    max-width: 934px;    
+}
+.company-inner-title {
+    font-size: 30px;
+    line-height: 187.5%;
+    color: #222222;
+    margin-bottom: 32px;
+}
+.company-inner-desc{
+    max-width: 545px;
+    font-size: 16px;
+    line-height: 187.5%;
+    color: #525252;
+    margin-bottom: 46px;
+}
+.company-img{
+    position: absolute;
+    top: 24px;
+    left: -40px;
+    max-width: 934px;
+    width: 100%;
+}
+.company-inner::after{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    width: 79px;
+    height: 62px;
+    background-image: url("../../images/rettangle.svg");
+    background-size: contain;
+    content: "";
+}
+
+@media screen and (min-width: 445px) {
+    .company{
+        padding-bottom: 297px;
+    }
+    
+}
+@media screen and (min-width: 550px) {
+    .company{
+        padding-bottom: 394px;
+    }
+    
+}
+@media screen and (min-width: 680px) {
+    .company{
+        padding-bottom: 449px;
+    }
+    
+}
+@media screen and (min-width: 768px) {
+    
+    .company{
+        padding-bottom: 165px;
+    }
+    .company-wrapper{
+        margin-right: 72px;
+        margin-left: 72px;
+    }
+    .company-title{
+        font-size: 25px;
+        line-height: 187.5%;
+    }
+    .company-inner{
+        position: relative;
+        
+    }
+    .company-img{
+        position: static;
+    }
+    .company-inner::after{
+        display: block;
+        position: absolute;
+        top: -71px;
+        right: -100px;
+        z-index: -1;
+        width: 196px;
+        height: 164px;
+        background-image: url("../../images/rettangle.svg");
+        background-size: cover;
+        content: "";
+    }
+}

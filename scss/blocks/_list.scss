@@ -1,0 +1,103 @@
+/* site list start */
+
+.list{
+    padding-bottom: 107px;
+}
+.list-wrapper{
+    max-width: 826px;
+    margin-bottom: 106px;
+}
+.list-section-list{
+    max-width: 1045px;
+}
+.list-item{
+    text-align: center;
+}
+.list-item::before{
+    display: block;
+    width: 65px;
+    height: 65px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    background-image: url("../../images/tel-icon.svg");
+    content: "";
+}
+.list-item:nth-child(2):before{
+    background-image: url("../../images/tv-icon.svg");
+}
+.list-item:nth-child(3)::before{
+    background-image: url("../../images/ps-icon.svg");
+}
+.list-item:nth-child(4)::before{
+    background-image: url("../../images/solution-icon.svg");
+}
+.list-item:nth-child(5)::before{
+    background-image: url("../../images/design.svg");
+}
+.list-item:nth-child(6)::before{
+    background-image: url("../../images/modeling.svg");
+}
+.list-item::after{
+    display: block;
+    width: 21px;
+    height: 21px;
+    margin: 0 auto;
+    margin-top: 23px;
+    background-image: url("../../images/list-arrow.svg  ");
+    content: "";
+}
+.list-item:not(:last-child){
+    margin-bottom: 65px;
+}
+.list-item-link{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 187.5%; 
+}
+
+@include mobile-first(768px){
+    .list-item:not(:last-child){
+        margin-bottom: 0;
+        margin-right: 100px;
+    }
+    .list-item:nth-child(2){
+        margin-right: 0;
+        margin-bottom: 62px;
+    }
+    .list-item:nth-child(5){
+        margin-right: 0;
+    }
+    .list-item:nth-child(6){
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+}
+
+@include mobile-first(845px){
+    .list-item:not(:last-child){
+        margin-right: 100px;
+    }
+    .list-item:nth-child(3){
+        margin-right: 0;
+    }
+    .list-item:nth-child(5){
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+    .list-item:nth-child(6){
+        margin-right: 0;
+    }  
+}
+
+@include mobile-first(1073px){
+    .list-item:not(:last-child){
+        margin-right: 100px;
+    }
+    .list-item:nth-child(4){
+        margin-right: 0;
+    }
+    .list-item:nth-child(5){
+        margin-right: 100px;
+        margin-left: 0;
+    }
+}
