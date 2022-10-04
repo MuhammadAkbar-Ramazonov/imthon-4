@@ -7,7 +7,7 @@
     <title>Project</title>
     <link rel="stylesheet" href="./css/main.css">
 </head>
-<body>
+<body class="">
     
     <!-- start header start -->
     <div class="d-none d-lg-block py-2">
@@ -42,7 +42,7 @@
                     </ul>
                     <a class="site-header-contact site-color text-decoration-none bg-white rounded d-none d-lg-block" href="#">Contact us</a>
                 </nav>
-                <button class="burger d-md-none js-header-btn border-0 bg-transparent" type="button ">
+                <button class="burger d-md-none js-header-btn border-0 bg-transparent" type="button">
                     <img src="./images/burger.svg" alt="site bar">
                 </button>
             </div>
@@ -60,7 +60,7 @@
                     <p class="hero-top-desc fw-bold">Digital Marketing</p>
                     <h1 class="text-black fw-bold hero-title mt-0">Work that we produce for our clients</h1>
                     <p class="hero-desc text-black">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
-                    <a class="hero-link text-decoration-none text-white" href="#">Get more details</a>
+                    <a class="hero-link d-inline-block text-decoration-none text-white" href="#">Get more details</a>
                 </div>
             </div>
         </section>
@@ -73,8 +73,11 @@
                     <h2 class="company-title text-center fw-semibold">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h2>
                     <h3 class="company-inner-title fw-semibold d-none d-md-block">Lorem Ipsum</h3>
                     <p class="company-inner-desc d-none d-md-block">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-                    <div class="company-inner">
-                        <img class="company-img" src="./images/company-img.jpg" alt="company with peoples">
+                    <div class="company-inner position-relative">
+                        <img class="company-img w-100" 
+                        src="./images/company-img.jpg"
+                        srcset="./images/company-img.jpg 1x, ./images/company-img@2x.jpg 2x"
+                        alt="company with peoples">
                     </div>
                 </div>
             </div>
@@ -85,26 +88,26 @@
         <section class="list">
             <div class="site-container">
                 <div class="list-wrapper mx-auto">
-                    <h2 class="list-title text-center fw-semibold">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h2>
+                    <h2 class="list-title mb-4 text-center fw-semibold">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h2>
                     <p class="list-desc text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
                 </div>
-                <ul class="list-section-list mx-auto list-unstyled d-flex flex-column flex-md-row flex-wrap justify-content-center">
-                    <li class="list-item ">
+                <ul class="list-section-list mx-auto list-unstyled d-grid d-md-flex flex-column flex-md-row flex-wrap justify-content-center">
+                    <li class="list-item text-center">
                         <a class="list-item-link text-black  text-decoration-none" href="#"> Mobile Game Development</a>
                     </li>
-                    <li class="list-item ">
+                    <li class="list-item text-center">
                         <a class="list-item-link text-black  text-decoration-none" href="#"> PC Game Development</a>
                     </li>
-                    <li class="list-item ">
+                    <li class="list-item text-center">
                         <a class="list-item-link text-black  text-decoration-none" href="#"> PS4 Game Development</a>
                     </li>
-                    <li class="list-item ">
+                    <li class="list-item text-center">
                         <a class="list-item-link text-black  text-decoration-none" href="#"> AR/VR Solutions</a>
                     </li>
-                    <li class="list-item d-none d-md-block ">
+                    <li class="list-item text-centerd-none d-md-block ">
                         <a class="list-item-link text-black  text-decoration-none" href="#"> AR/ VR design</a>
                     </li>
-                    <li class="list-item d-none d-md-block ">
+                    <li class="list-item text-centerd-none d-md-block ">
                         <a class="list-item-link text-black  text-decoration-none" href="#"> 3D Modelings</a>
                     </li>
                 </ul>
@@ -123,25 +126,25 @@
             <ul class="site-list p-0 mx-auto position-relative list-unstyled d-flex mt-5">
                 <li class="site-item rounded-4 bg-white">
                     <div class="carusel-inner-colors d-inline-block bg-success bg-opacity-25 text-success rounded">Lorem ipsum</div>
-                    <h3 class="site-item-title fw-semibold">Lorem Ipsum</h3>
+                    <h3 class="site-item-title mb-3 fw-semibold">Lorem Ipsum</h3>
                     <p class="site-item-desc">  “Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.”</p>
                     <a class="site-item-link text-decoration-none" href="#">Read more</a>
                 </li>
                 <li class="site-item rounded-4 bg-white" >
                     <div class="carusel-inner-colors d-inline-block bg-danger bg-opacity-25 text-danger rounded">Lorem ipsum</div>
-                    <h3 class="site-item-title fw-semibold">Lorem Ipsum</h3>
+                    <h3 class="site-item-title mb-3 fw-semibold">Lorem Ipsum</h3>
                     <p class="site-item-desc">“We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused.”</p>
                     <a class="site-item-link text-decoration-none" href="#">Read more</a>
                 </li>
                 <li class="site-item rounded-4 bg-white" >
                     <div class="carusel-inner-colors d-inline-block carusel-inner-color rounded">Lorem ipsum</div>
-                    <h3 class="site-item-title fw-semibold">Lorem Ipsum</h3>
+                    <h3 class="site-item-title mb-3 fw-semibold">Lorem Ipsum</h3>
                     <p class="site-item-desc">“Manage allows us to provide structure and process. It keeps us organized and focused. I can’t stop recommending them to everyone I talk to!”</p>
                     <a class="site-item-link text-decoration-none" href="#">Read more</a>
                 </li>
                 <li class="site-item rounded-4 bg-white" >
                     <div class="carusel-inner-colors d-inline-block bg-primary bg-opacity-25 text-primary rounded">Lorem ipsum</div>
-                    <h3 class="site-item-title fw-semibold">Lorem Ipsum</h3>
+                    <h3 class="site-item-title mb-3 fw-semibold">Lorem Ipsum</h3>
                     <p class="site-item-desc">“Manage allows us to provide structure and process. It keeps us organized and focused. I can’t stop recommending them to everyone I talk to!”</p>
                     <a class="site-item-link text-decoration-none" href="#">Read more</a>
                 </li>
@@ -152,28 +155,46 @@
         <!-- photo section start -->
         <section class="photo">
             <div class="site-container">
-                <div class="photo-wrapper mx-auto">
-                    <h2 class="photo-title mb-4 mb-md-3 text-center fw-semibold">Our Recent Projects</h2>
+                <div class="photo-wrapper mb-5 mx-auto">
+                    <h2 class="photo-title  mb-4 mb-md-3 text-center fw-semibold">Our Recent Projects</h2>
                     <p class="photo-desc text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
                 </div>
                 <ul class="photo-section-list mx-auto list-unstyled row gy-4">
                     <li class="photo-item col-12 col-md-6 col-lg-4">
-                        <img class="photo-img" src="./images/books.png" alt="whrite to notebook ">
+                        <img class="photo-img mx-auto w-100 d-block"
+                        src="./images/books.png" 
+                        srcset="./images/books.png 1x, ./images/books@2x.png 2x"
+                        alt="whrite to notebook ">
                     </li>
                     <li class="photo-item col-12 col-md-6 col-lg-4">
-                        <img class="photo-img" src="./images/working-company.png" alt="conferensiya">
+                        <img class="photo-img mx-auto w-100 d-block"
+                        src="./images/working-company.png" 
+                        srcset="./images/working-company.png 1x, ./images/working-company@2x.png 2x"
+                        alt="conferensiya">
                     </li>
                     <li class="photo-item col-12 col-md-6 col-lg-4">
-                        <img class="photo-img" src="./images/working-alone.png" alt="working-alone">
+                        <img class="photo-img mx-auto w-100 d-block"
+                        src="./images/working-alone.png" 
+                        srcset="./images/working-alone.png 1x, ./images/working-alone@2x.png 2x"
+                        alt="working-alone">
                     </li>
                     <li class="photo-item col-12 col-md-6 col-lg-3">
-                        <img class="photo-img" src="./images/read-book.png" alt="read book">
+                        <img class="photo-img mx-auto w-100 d-block"
+                        src="./images/read-book.png" 
+                        srcset="./images/read-book.png 1x, ./images/read-book@2x.png 2x"
+                        alt="read book">
                     </li>
                     <li class="d-none d-lg-block col-12 col-md-6 col-lg-4">
-                        <img class="photo-img" src="./images/practica.png" alt="practica">
+                        <img class="photo-img mx-auto w-100 d-block"
+                        src="./images/practica.png" 
+                        srcset="./images/practica.png 1x, ./images/practica@2x.png 2x"
+                        alt="practica">
                     </li>
                     <li class="d-none d-lg-block col-12 col-md-6 col-lg-5">
-                        <img class="photo-img" src="./images/working-pairs.png" alt="working pairs">
+                        <img class="photo-img mx-auto w-100 d-block"
+                        src="./images/working-pairs.png" 
+                        srcset="./images/working-pairs.png 1x, ./images/working-pairs@2x.png 2x"
+                        alt="working pairs">
                     </li>
                 </ul>
             </div>
@@ -183,22 +204,87 @@
         <!-- family section start -->
         <section class="family">
             <div class="site-container">
-                <div class="family-inner">
-                    <h2 class="text-black fw-bold family-title mt-0">Lorem Ipsum is simply dummy text dummy text </h2>
-                    <p class="family-desc text-black">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                    <a class="family-link text-decoration-none text-white" href="#">Read more</a>
+                <div class="d-flex flex-column flex-column-reverse flex-xl-row align-items-md-center">
+                    <img class="family-img w-100" 
+                    src="./images/family-picture.png"
+                    srcset="./images/family-picture.png 1x, ./images/family-picture@2x.png 2x"
+                    alt="Family picture">
+                    <div class="family-inner">
+                        <h2 class="family-title text-black mt-0">Lorem Ipsum is simply dummy text dummy text </h2>
+                        <p class="family-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+                        <p class="family-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                        <a class="family-link d-inline-block text-center text-decoration-none text-white" href="#">Read more</a>
+                    </div>
                 </div>
             </div>
         </section>
         <!-- family section finish -->
-
+        
+        <!-- article section start -->
+        <article class="site-article"> 
+            <div class="site-container">
+                <div class="site-article-wrapper">
+                    <h2 class="site-article-title mb-3 fw-semibold">Lorem Ipsum</h2>
+                    <p class="site-article-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                </div>
+                <div class="site-article-inner rounded-4 d-lg-flex align-items-center justify-content-between">
+                    <div class="site-article-inner-texts mx-md-auto ms-lg-0">
+                        <h3 class="site-article-inner-title text-white">Stay in the loop</h3>
+                        <p class="site-article-inner-desc text-white">Subscribe to receive the latest news and updates about TDA. We promise not to spam you! </p>
+                    </div>
+                    <form class="site-article-form position-relative rounded-3 mx-md-auto me-lg-0" action="https://echo.htmlacademy.ru/" method="post" autocomplete="off">
+                        <input class="p-3 rounded-3 d-block w-100" type="email" name="user_input" aria-label="Text input with dropdown button" placeholder="Enter email address">
+                        <button class="site-article-input-btn rounded-3 position-absolute text-white border-0 w-50 " type="submit">Continue</button>
+                    </form>
+                </div>
+            </div>
+        </article>
+        <!-- article section finish -->
+        
     </main>
     <!-- site main finish -->
     
     <!-- site footer start -->
-    <footer>
-        
+    <footer class="site-footer">
+        <div class="site-container">
+            <div class="site-footer-wrapper d-none d-md-block text-md-center text-lg-start d-lg-flex justify-content-between">
+                <div class="site-footer-logo-wrapper mx-md-auto mb-md-5 m-lg-0">
+                    <img class="mb-4 mx-md-auto ms-lg-0" src="./images/LOGO.svg" alt="site logo ">
+                    <p class="footer-img-desc text-white mb-4" >Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    <a class="footer-img-desc text-white text-decoration-none"  href="#">@Company.com</a>
+                </div>
+                <div class="mb-md-5 m-lg-0">
+                    <strong class="footer-strong text-white mb-3 d-inline-block">About us</strong>
+                    <ul class="list-unstyled mb-0">
+                        <li class="footer-item-desc text-white">Company</li>
+                        <li class="footer-item-desc text-white">Portfolio</li>
+                        <li class="footer-item-desc text-white">Careers</li>
+                        <li class="footer-item-desc text-white">Contact us</li>
+                    </ul>
+                </div>
+                <div class="site-footer-contact-wrapper mx-md-auto mb-md-4 m-lg-0">
+                    <strong class="footer-strong text-white mb-4 d-inline-block">Contact us</strong>
+                    <p class="footer-img-desc text-white">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    <a class="footer-img-desc text-white text-decoration-none" href="tel:+90000000000">+9000 0000 000</a>
+                </div>
+                <ul class="list-unstyled d-flex align-items-end justify-content-md-center mb-0">
+                    <li class="footer-item-img me-3 d-flex align-items-center justify-content-center bg-white rounded-pill ">
+                        <img src="./images/facebook.svg" alt="">
+                    </li>
+                    <li class="footer-item-img me-3 d-flex align-items-center justify-content-center bg-white rounded-pill ">
+                        <img src="./images/instagram.svg" alt="">
+                    </li>
+                    <li class="footer-item-img me-3 d-flex align-items-center justify-content-center bg-white rounded-pill ">
+                        <img src="./images/twitter.svg" alt="">
+                    </li>
+                    <li class="footer-item-img d-flex align-items-center justify-content-center bg-white rounded-pill ">
+                        <img src="./images/linkedin.svg" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr class="d-none d-md-block footer-line mt-0">
+        <p class="footer-company text-center text-white mb-0">Copyright ® 2021 Company All rights Rcerved</p>
     </footer>
     <!-- site footer start -->
     

@@ -1,0 +1,58 @@
+/* site family start */
+
+.family{
+    padding-bottom: 49px;
+}
+.family-img{
+    max-width: 671px;
+}
+.family-inner{
+    max-width: 536px;
+}
+.family-title{
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 33px;
+    margin-bottom: 34px;
+    
+}
+.family-desc{
+    font-size: 13px;
+    line-height: 20px;
+    color: #515151;
+    margin-bottom: 18px;
+    color: #515151;
+}
+
+.family-link{
+    width: 177px;
+    padding: 13px 44px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 28px;
+    margin-bottom: 66px;
+    background-color: #DC7000;
+}
+
+@include mobile-first(768px){
+    
+    .family-title{
+        font-size: 30px;
+        line-height: 45px;
+        margin-bottom: 43px;
+    }
+    .family-desc{
+        font-size: 17px;
+        line-height: 26px;
+        color: #515151;
+    }
+}
+
+@include mobile-first(1200px){
+    .family{
+        padding-bottom: 125px;
+    }
+    .family-img{
+        margin-right: 67px;
+    }
+}

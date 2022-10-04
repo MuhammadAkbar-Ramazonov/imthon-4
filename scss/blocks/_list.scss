@@ -7,11 +7,18 @@
     max-width: 826px;
     margin-bottom: 106px;
 }
+.list-title{
+    font-size: 20px;
+    line-height: 187.5%;
+    color: #222222;
+}
+.list-desc{
+    font-size: 12px;
+    line-height: 187.5%;
+    color: #525252;
+}
 .list-section-list{
     max-width: 1045px;
-}
-.list-item{
-    text-align: center;
 }
 .list-item::before{
     display: block;
@@ -56,48 +63,18 @@
 }
 
 @include mobile-first(768px){
-    .list-item:not(:last-child){
-        margin-bottom: 0;
-        margin-right: 100px;
+    .list{
+        padding-bottom: 133px;
     }
-    .list-item:nth-child(2){
-        margin-right: 0;
-        margin-bottom: 62px;
+    .list-section-list{
+        gap: 4rem;
     }
-    .list-item:nth-child(5){
-        margin-right: 0;
+    .list-title{
+        font-size: 25px;
+        line-height: 187.5%;
+        color: #222222;
     }
-    .list-item:nth-child(6){
-        margin-right: 50px;
-        margin-left: 50px;
-    }
-}
-
-@include mobile-first(845px){
-    .list-item:not(:last-child){
-        margin-right: 100px;
-    }
-    .list-item:nth-child(3){
-        margin-right: 0;
-    }
-    .list-item:nth-child(5){
-        margin-right: 50px;
-        margin-left: 50px;
-    }
-    .list-item:nth-child(6){
-        margin-right: 0;
-    }  
-}
-
-@include mobile-first(1073px){
-    .list-item:not(:last-child){
-        margin-right: 100px;
-    }
-    .list-item:nth-child(4){
-        margin-right: 0;
-    }
-    .list-item:nth-child(5){
-        margin-right: 100px;
-        margin-left: 0;
+    .list-desc{
+        font-size: 16px;
     }
 }

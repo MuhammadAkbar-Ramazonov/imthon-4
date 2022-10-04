@@ -22,13 +22,16 @@ $(document).ready(function(){
         arrows: true,
         dots: false,
         slidesToShow: 3,
+        infinite: true, 
         slidesToScroll: 1,
         responsive: [
             {
-              breakpoint: 1000,
-              settings: {
-                slidesToShow: 1,
-              }
+                breakpoint: 1000,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    
+                }
             },
         ],
         speed: 800,

@@ -1,4 +1,7 @@
 /* site header start */
+body[no-scroll]{
+    overflow-y: hidden;
+}
 .top-header-address {
     margin-right: 100px;
 }
@@ -62,6 +65,10 @@
 }
 
 @media screen and (min-width: 768px) {
+    body[no-scroll]{
+        overflow-y: scroll;
+    }
+    
     .site-header{
         padding-top: 16px;
         padding-bottom: 14px;
@@ -101,7 +108,6 @@
     }
     
 }
-
 
 @keyframes slideIn{
     100%{

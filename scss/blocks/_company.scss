@@ -17,7 +17,6 @@
     color: #222222;
 }
 .company-inner{
-    position: relative;
     max-width: 934px;    
 }
 .company-inner-title {
@@ -38,7 +37,6 @@
     top: 24px;
     left: -40px;
     max-width: 934px;
-    width: 100%;
 }
 .company-inner::after{
     display: block;
@@ -59,18 +57,21 @@
     }
     
 }
+
 @media screen and (min-width: 550px) {
     .company{
         padding-bottom: 394px;
     }
     
 }
+
 @media screen and (min-width: 680px) {
     .company{
         padding-bottom: 449px;
     }
     
 }
+
 @media screen and (min-width: 768px) {
     
     .company{
@@ -84,10 +85,6 @@
         font-size: 25px;
         line-height: 187.5%;
     }
-    .company-inner{
-        position: relative;
-        
-    }
     .company-img{
         position: static;
     }
@@ -95,7 +92,7 @@
         display: block;
         position: absolute;
         top: -71px;
-        right: -100px;
+        right: -87px;
         z-index: -1;
         width: 196px;
         height: 164px;

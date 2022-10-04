@@ -31,7 +31,6 @@
     font-weight: 500;
     font-size: 15px;
     line-height: 22px;
-    display: inline-block;
     padding: 14px 31px;
     background: linear-gradient(92.48deg, #FA8305 2.08%, #FB9E3C 117.25%);
     border-radius: 40px;
@@ -64,5 +63,18 @@
     .hero-link{
         font-size: 16px;
         line-height: 24px;
+    }
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) {
+        .hero{
+            background-image: url("../../images/hero-people@2x.png"), url("../../images/hero-lines@2x.png"), url("../../images/hero-bg@2x.png");        
+            background-size: contain;
+        
+        }
     }
 }
